@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StaySafeOnline</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f1117;
+      color: #e0e0e0;
+      line-height: 1.7;
+    }
+
+    nav {
+      background: #0f1117;
+      border-bottom: 1px solid #1e2330;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #4ade80;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: #9ca3af;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: #4ade80; }
+
+    .hero {
+      max-width: 700px;
+      margin: 6rem auto;
+      padding: 0 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 span { color: #4ade80; }
+
+    .hero p {
+      color: #9ca3af;
+      font-size: 1.05rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #4ade80;
+      color: #0f1117;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+      margin: 0.25rem;
+    }
+
+    .btn:hover { background: #22c55e; }
+
+    .btn-outline {
+      background: transparent;
+      color: #4ade80;
+      border: 1px solid #4ade80;
+    }
+
+    .btn-outline:hover { background: rgba(74,222,128,0.1); }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto 6rem;
+      padding: 0 2rem;
+    }
+
+    .card {
+      background: #1a1f2e;
+      border: 1px solid #1e2330;
+      border-radius: 10px;
+      padding: 1.75rem;
+      text-decoration: none;
+      display: block;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .card:hover {
+      border-color: #4ade80;
+      transform: translateY(-2px);
+    }
+
+    .card-icon {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #9ca3af;
+      font-size: 0.88rem;
+    }
+
+    footer {
+      border-top: 1px solid #1e2330;
+      text-align: center;
+      padding: 2rem;
+      color: #6b7280;
+      font-size: 0.82rem;
+    }
+
+    footer a { color: #4ade80; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">StaySafeOnline</a>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="passwords.html">Passwords</a></li>
+      <li><a href="phishing.html">Phishing</a></li>
+      <li><a href="habits.html">Safe Habits</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>Stay safe.<br>Stay <span style="text-decoration: underline;">informed.</span></h1>
+    <p>A simple, practical guide to protecting yourself online — no jargon, no fluff.</p>
+    <a href="passwords.html" class="btn">Get Started</a>
+    <a href="resources.html" class="btn btn-outline">Resources</a>
+  </div>
+
+  <div class="cards">
+    <a href="passwords.html" class="card">
+      <div class="card-icon">🔑</div>
+      <h3>Password Hygiene</h3>
+      <p>Why strong, unique passwords matter and how a password manager makes it easy.</p>
+    </a>
+    <a href="phishing.html" class="card">
+      <div class="card-icon">🎣</div>
+      <h3>Phishing & Social Engineering</h3>
+      <p>How to spot fake emails, suspicious links, and manipulation tactics.</p>
+    </a>
+    <a href="habits.html" class="card">
+      <div class="card-icon">🛡️</div>
+      <h3>Safe Browsing Habits</h3>
+      <p>2FA, HTTPS, public Wi-Fi risks, and what to do if you're compromised.</p>
+    </a>
+    <a href="resources.html" class="card" style="justify-content: center;">
+      <div class="card-icon">📚</div>
+      <h3>Resources</h3>
+      <p>Beginner-friendly courses, tools, and sites to keep learning.</p>
+    </a>
+  </div>
+
+  <footer>
+    <p>StaySafeOnline — AME 111 Project</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources — StaySafeOnline</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #0f1117; color: #e0e0e0; line-height: 1.7; }
+    nav { background: #0f1117; border-bottom: 1px solid #1e2330; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 10; }
+    .logo { font-size: 1.1rem; font-weight: 600; color: #4ade80; text-decoration: none; }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav a { color: #9ca3af; text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: #4ade80; }
+
+    .page { max-width: 740px; margin: 0 auto; padding: 4rem 2rem; }
+    .page-label { font-size: 0.8rem; color: #4ade80; letter-spacing: 0.1em; margin-bottom: 0.75rem; }
+    h1 { font-size: 2.2rem; font-weight: 600; color: #fff; margin-bottom: 1rem; }
+    h2 { font-size: 1.2rem; font-weight: 600; color: #fff; margin: 2.5rem 0 0.75rem; }
+    p { color: #9ca3af; font-size: 0.95rem; margin-bottom: 1rem; }
+    a { color: #4ade80; }
+
+    ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+    ul li { margin-bottom: 0.4rem; }
+
+    .img-wrap { margin: 2rem 0; }
+    .img-wrap img { width: 100%; border-radius: 8px; border: 1px solid #1e2330; }
+    .img-caption { font-size: 0.78rem; color: #6b7280; margin-top: 0.5rem; }
+
+    footer { border-top: 1px solid #1e2330; text-align: center; padding: 2rem; color: #6b7280; font-size: 0.82rem; }
+    footer a { color: #4ade80; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">StaySafeOnline</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+      <li><a href="passwords.html">Passwords</a></li>
+      <li><a href="phishing.html">Phishing</a></li>
+      <li><a href="habits.html">Safe Habits</a></li>
+      <li><a href="resources.html" class="active">Resources</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+    <div class="page-label">04 — RESOURCES</div>
+    <h1>Keep learning, stay protected</h1>
+    <p class="intro">Here are trusted tools, courses, and references to help you build strong cybersecurity habits.</p>
+
+    <h2>Cybersecurity Basics</h2>
+    <div class="img-wrap">
+      <img src="assets/shield.png" alt="Blue cybersecurity shield with circuit board background representing digital protection.">
+      <p class="img-caption">
+        <a href="https://commons.wikimedia.org/wiki/File:Seguridadenso.jpg">"Seguridad"</a> by 
+        <a href="https://commons.wikimedia.org/w/index.php?title=User:Betancort_741&action=edit&redlink=1">Betancort 741</a>, is licensed under 
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY‑SA 4.0</a>. 
+      </p>
+    </div>
+
+    <h2>Free Tools</h2>
+    <ul>
+      <li><a href="https://bitwarden.com" target="_blank">Bitwarden</a> — Password manager</li>
+      <li><a href="https://haveibeenpwned.com" target="_blank">Have I Been Pwned</a> — Breach checker</li>
+      <li><a href="https://malwarebytes.com" target="_blank">Malwarebytes</a> — Malware scanner</li>
+    </ul>
+
+    <h2>Beginner-Friendly Courses</h2>
+    <ul>
+      <li><a href="https://www.coursera.org/specializations/it-security" target="_blank">Coursera: IT Security</a></li>
+      <li><a href="https://www.udemy.com/topic/cyber-security/" target="_blank">Udemy Cybersecurity Courses</a></li>
+      <li><a href="https://www.cybrary.it" target="_blank">Cybrary</a></li>
+    </ul>
+
+    <h2>Official References</h2>
+    <ul>
+      <li><a href="https://www.cisa.gov" target="_blank">CISA</a></li>
+      <li><a href="https://www.nist.gov/cyberframework" target="_blank">NIST Cybersecurity Framework</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>StaySafeOnline — AME 111 Project</p>
+  </footer>
+
+</body>
+</html>

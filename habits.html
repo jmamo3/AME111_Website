@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safe Habits — StaySafeOnline</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #0f1117; color: #e0e0e0; line-height: 1.7; }
+    nav { background: #0f1117; border-bottom: 1px solid #1e2330; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 10; }
+    .logo { font-size: 1.1rem; font-weight: 600; color: #4ade80; text-decoration: none; }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav a { color: #9ca3af; text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: #4ade80; }
+
+    .page { max-width: 740px; margin: 0 auto; padding: 4rem 2rem; }
+    .page-label { font-size: 0.8rem; color: #4ade80; letter-spacing: 0.1em; margin-bottom: 0.75rem; }
+    h1 { font-size: 2.2rem; font-weight: 600; color: #fff; margin-bottom: 1rem; }
+    .intro { color: #9ca3af; font-size: 1rem; margin-bottom: 3rem; max-width: 600px; }
+
+    h2 { font-size: 1.2rem; font-weight: 600; color: #fff; margin: 2.5rem 0 0.75rem; }
+    p { color: #9ca3af; font-size: 0.95rem; margin-bottom: 1rem; }
+    a { color: #4ade80; }
+
+    ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+    ul li { margin-bottom: 0.4rem; }
+
+    .tip-box { background: #1a1f2e; border-left: 3px solid #4ade80; border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+    .warn-box { background: #1f1a1a; border-left: 3px solid #f87171; border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+
+    .nav-links { display: flex; justify-content: space-between; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #1e2330; }
+    .nav-links a { color: #4ade80; font-size: 0.9rem; }
+
+    footer { border-top: 1px solid #1e2330; text-align: center; padding: 2rem; color: #6b7280; font-size: 0.82rem; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">StaySafeOnline</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+      <li><a href="passwords.html">Passwords</a></li>
+      <li><a href="phishing.html">Phishing</a></li>
+      <li><a href="habits.html" class="active">Safe Habits</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+    <div class="page-label">03 — SAFE BROWSING HABITS</div>
+    <h1>Stay safe wherever you browse</h1>
+    <p class="intro">Good security isn’t just about passwords — it’s about the habits you build every day. These simple practices dramatically reduce your risk online.</p>
+
+    <h2>Enable two-factor authentication (2FA)</h2>
+    <p>2FA adds a second layer of protection, making it far harder for attackers to access your accounts even if they have your password.</p>
+
+    <h2>Look for HTTPS</h2>
+    <p>Before entering sensitive information, check for <strong>https://</strong> and a lock icon in the address bar. This ensures your connection is encrypted.</p>
+
+    <h2>Be careful on public Wi‑Fi</h2>
+    <ul>
+      <li>Avoid logging into important accounts</li>
+      <li>Use a VPN if possible</li>
+      <li>Never access banking or email on open networks</li>
+    </ul>
+
+    <div class="warn-box">
+      <p>⚠️ Attackers can intercept traffic on public Wi‑Fi. Treat it as untrusted.</p>
+    </div>
+
+    <h2>Keep your software updated</h2>
+    <p>Updates patch vulnerabilities that attackers actively exploit. Turn on automatic updates whenever possible.</p>
+
+    <h2>What to do if your account is compromised</h2>
+    <ul>
+      <li>Change your password immediately</li>
+      <li>Enable 2FA</li>
+      <li>Check recent login activity</li>
+      <li>Revoke access to suspicious devices or apps</li>
+    </ul>
+
+    <div class="tip-box">
+      <p>💡 Small habits add up. The more consistent you are, the safer you stay.</p>
+    </div>
+
+    <div class="nav-links">
+      <a href="phishing.html">← Phishing</a>
+      <a href="resources.html">Resources →</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>StaySafeOnline — AME 111 Project</p>
+  </footer>
+
+</body>
+</html>
