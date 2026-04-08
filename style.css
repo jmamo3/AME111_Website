@@ -1,0 +1,318 @@
+/* =========================================
+   GLOBAL RESET & BASE STYLES
+   ========================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0f1117;
+  color: #e0e0e0;
+  line-height: 1.7;
+}
+
+a {
+  color: #4ade80;
+  text-decoration: none;
+}
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+nav {
+  background: #0f1117;
+  border-bottom: 1px solid #1e2330;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4ade80;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #4ade80;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+footer {
+  border-top: 1px solid #1e2330;
+  text-align: center;
+  padding: 2rem;
+  color: #6b7280;
+  font-size: 0.82rem;
+}
+
+footer a {
+  color: #4ade80;
+}
+
+/* =========================================
+   HOMEPAGE — HERO SECTION
+   ========================================= */
+.hero {
+  max-width: 700px;
+  margin: 6rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.hero h1 span {
+  color: #4ade80;
+}
+
+.hero p {
+  color: #9ca3af;
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+}
+
+/* =========================================
+   HOMEPAGE — BUTTONS
+   ========================================= */
+.btn {
+  display: inline-block;
+  background: #4ade80;
+  color: #0f1117;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+  margin: 0.25rem;
+}
+
+.btn:hover {
+  background: #22c55e;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #4ade80;
+  border: 1px solid #4ade80;
+}
+
+.btn-outline:hover {
+  background: rgba(74, 222, 128, 0.1);
+}
+
+/* =========================================
+   HOMEPAGE — CARDS GRID
+   ========================================= */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto 6rem;
+  padding: 0 2rem;
+}
+
+/* Center the 4th card */
+.cards a:last-child {
+  grid-column: 1 / -1;
+  max-width: 260px;
+  justify-self: center;
+}
+
+.card {
+  background: #1a1f2e;
+  border: 1px solid #1e2330;
+  border-radius: 10px;
+  padding: 1.75rem;
+  text-decoration: none;
+  display: block;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: #4ade80;
+  transform: translateY(-2px);
+}
+
+.card-icon {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #9ca3af;
+  font-size: 0.88rem;
+}
+
+/* =========================================
+   INNER PAGES — PAGE LAYOUT
+   ========================================= */
+.page {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.page-label {
+  font-size: 0.8rem;
+  color: #4ade80;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  color: #9ca3af;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 2.5rem 0 0.75rem;
+}
+
+p {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.4rem;
+}
+
+/* =========================================
+   INNER PAGES — TIP & WARNING BOXES
+   ========================================= */
+.tip-box {
+  background: #1a1f2e;
+  border-left: 3px solid #4ade80;
+  border-radius: 0 8px 8px 0;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.warn-box {
+  background: #1f1a1a;
+  border-left: 3px solid #f87171;
+  border-radius: 0 8px 8px 0;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.warn-box p {
+  color: #fca5a5;
+}
+
+/* =========================================
+   INNER PAGES — IMAGES
+   ========================================= */
+.img-wrap {
+  margin: 2rem 0;
+}
+
+.img-wrap img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #1e2330;
+}
+
+.img-caption {
+  font-size: 0.78rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* =========================================
+   PHISHING PAGE — RED FLAGS GRID
+   ========================================= */
+.red-flags {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.flag {
+  background: #1a1f2e;
+  border: 1px solid #1e2330;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 0.88rem;
+  color: #9ca3af;
+}
+
+.flag strong {
+  color: #f87171;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* =========================================
+   INNER PAGES — NAV LINKS
+   ========================================= */
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #1e2330;
+}
+
+.nav-links a {
+  color: #4ade80;
+  font-size: 0.9rem;
+}
